@@ -1,6 +1,3 @@
-# Minimal requirements for Vercel deployment
-flask==3.0.0
-dash==2.16.1
-dash-bootstrap-components==1.5.0
-plotly==5.17.0
+# Requirements for static site generation
 pandas==2.1.4
+plotly==5.17.0

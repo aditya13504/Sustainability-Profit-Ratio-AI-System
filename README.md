@@ -80,9 +80,9 @@ The **Enhanced SPR (Sustainability-Profit-Research) Analyzer** is a cutting-edge
 - **OpenPyXL**: Excel file processing and export
 
 ### **Infrastructure**
-- **Vercel**: Serverless deployment platform
-- **SQLite**: Local data storage and caching
-- **aiohttp**: Asynchronous HTTP client for API calls
+- **Netlify**: Static site hosting and deployment
+- **GitHub**: Version control and continuous deployment
+- **Static HTML**: Optimized for fast loading and performance
 
 ## 📁 Project Structure
 
@@ -123,7 +123,12 @@ research-profit-analyzer/
 │   │   └── research_papers/             # Academic papers (20+ papers)
 │   └── 📁 registry/                 # Company registry data
 ├── app.py                           # Vercel entry point
-├── vercel.json                      # Vercel deployment config
+├── netlify.toml                     # Netlify deployment config
+├── generate_static_site.py         # Static site generator
+├── dist/                           # Generated static files
+│   ├── index.html                  # Main dashboard HTML
+│   ├── data.json                   # Sample data
+│   └── _redirects                  # Netlify redirects
 ├── requirements.txt                 # Python dependencies
 ├── start_enhanced_spr_dashboard.py # Local development server
 └── README.md                        # Project documentation
@@ -159,25 +164,25 @@ research-profit-analyzer/
    - Open your browser to `http://localhost:8050`
    - Follow the 4-step analysis process
 
-### **Vercel Deployment**
+### **Netlify Deployment**
 
 1. **Fork this repository** to your GitHub account
 
-2. **Connect to Vercel**:
-   - Go to [vercel.com](https://vercel.com)
-   - Click "New Project"
-   - Import your forked repository
+2. **Connect to Netlify**:
+   - Go to [netlify.com](https://netlify.com)
+   - Click "New site from Git"
+   - Connect your GitHub account and select your forked repository
 
-3. **Configure Environment Variables** in Vercel dashboard:
-   ```env
-   GEMINI_API_KEY=your_gemini_api_key
-   MISTRAL_API_KEY=your_mistral_api_key
-   ALPHA_VANTAGE_API_KEY=your_alpha_vantage_key
-   FINNHUB_API_KEY=your_finnhub_key
-   NEWSAPI_KEY=your_newsapi_key
-   ```
+3. **Configure Build Settings**:
+   - Build command: `pip install -r requirements.txt && python generate_static_site.py`
+   - Publish directory: `dist`
+   - Node version: `18` (if needed)
 
-4. **Deploy**: Vercel will automatically build and deploy your dashboard
+4. **Deploy**: Netlify will automatically build and deploy your static dashboard
+
+5. **Custom Domain** (Optional):
+   - Add your custom domain in Netlify dashboard
+   - Configure DNS settings as instructed
 
 ## 🔑 Required API Keys
 
@@ -286,9 +291,9 @@ The system includes analysis of 20+ academic papers on sustainability and profit
 - **Rate Limiting**: API quota management
 
 ### **Scalability Considerations**
-- **Serverless Architecture**: Vercel deployment for auto-scaling
+- **Static Hosting**: Netlify deployment for fast global CDN
 - **Modular Design**: Component-based architecture
-- **API Abstraction**: Easy integration of new data sources
+- **Optimized Loading**: Pre-generated static assets
 - **Configuration Management**: YAML-based settings
 
 ## 🔒 Security & Privacy
