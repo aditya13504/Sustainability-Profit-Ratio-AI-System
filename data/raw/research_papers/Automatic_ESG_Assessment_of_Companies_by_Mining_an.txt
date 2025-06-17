@@ -1,0 +1,36 @@
+TITLE: Automatic ESG Assessment of Companies by Mining and Evaluating Media Coverage Data: NLP Approach and Tool
+
+AUTHORS: Jannik Fischbach, Max Adam, Victor Dzhagatspanyan, Daniel Mendez, Julian Frattini, Oleksandr Kosenkov, Parisa Elahidoost
+
+PUBLISHED: 2022-12-13
+
+ABSTRACT:
+Context: Sustainable corporate behavior is increasingly valued by society and
+impacts corporate reputation and customer trust. Hence, companies regularly
+publish sustainability reports to shed light on their impact on environmental,
+social, and governance (ESG) factors. Problem: Sustainability reports are
+written by companies themselves and are therefore considered a
+company-controlled source. Contrary, studies reveal that non-corporate channels
+(e.g., media coverage) represent the main driver for ESG transparency. However,
+analysing media coverage regarding ESG factors is challenging since (1) the
+amount of published news articles grows daily, (2) media coverage data does not
+necessarily deal with an ESG-relevant topic, meaning that it must be carefully
+filtered, and (3) the majority of media coverage data is unstructured. Research
+Goal: We aim to extract ESG-relevant information from textual media reactions
+automatically to calculate an ESG score for a given company. Our goal is to
+reduce the cost of ESG data collection and make ESG information available to
+the general public. Contribution: Our contributions are three-fold: First, we
+publish a corpus of 432,411 news headlines annotated as being environmental-,
+governance-, social-related, or ESG-irrelevant. Second, we present our
+tool-supported approach called ESG-Miner capable of analyzing and evaluating
+headlines on corporate ESG-performance automatically. Third, we demonstrate the
+feasibility of our approach in an experiment and apply the ESG-Miner on 3000
+manually labeled headlines. Our approach processes 96.7 % of the headlines
+correctly and shows a great performance in detecting environmental-related
+headlines along with their correct sentiment. We encourage fellow researchers
+and practitioners to use the ESG-Miner at https://www.esg-miner.com.
+
+CATEGORIES: cs.IR
+
+URL: http://arxiv.org/abs/2212.06540v2
+PDF: http://arxiv.org/pdf/2212.06540v2

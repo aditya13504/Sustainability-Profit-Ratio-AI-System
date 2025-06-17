@@ -1,0 +1,283 @@
+Title,Authors,Published,Abstract,Categories,URL,PDF_URL,Keywords,Relevance_Score
+The China Trade Shock and the ESG Performances of US firms,"Hui Xu, Yue Wu",2022-01-28,"How does import competition from China affect engagement on ESG initiatives
+by US corporates? On the one hand, reduced profitability due to import
+competition and lagging ESG performance of Chinese exporters can disincentivize
+US firms to put more resources to ESG initiatives. On the other hand, the shift
+from labor-intensive production to capital/technology-intensive production
+along with offshoring may improve the US company's ESG performance. Moreover,
+US companies have incentives to actively pursue more ESG engagement to
+differentiate from Chinese imports. Exploiting a trade policy in which US
+congress granted China the Permanent Normal Trade Relations and the resulting
+change in expected tariff rates on Chinese imports, we find that greater import
+competition from China leads to an increase in the US company's ESG
+performance. The improvement primarily stems from ""doing more positives"" and
+from more involvement on environmental initiatives. Indirect and direct
+evidence shows that the improvement is not driven by the change in production
+process or offshoring, but is consistent with product differentiation. Our
+results suggest that the trade shock from China has significant impact on the
+US company's ESG performance.","q-fin.GN, econ.GN, q-fin.EC",http://arxiv.org/abs/2201.12402v1,http://arxiv.org/pdf/2201.12402v1,ESG corporate profitability,0.0
+InvestESG: A multi-agent reinforcement learning benchmark for studying climate investment as a social dilemma,"Xiaoxuan Hou, Jiayi Yuan, Joel Z. Leibo, Natasha Jaques",2024-11-15,"InvestESG is a novel multi-agent reinforcement learning (MARL) benchmark
+designed to study the impact of Environmental, Social, and Governance (ESG)
+disclosure mandates on corporate climate investments. The benchmark models an
+intertemporal social dilemma where companies balance short-term profit losses
+from climate mitigation efforts and long-term benefits from reducing climate
+risk, while ESG-conscious investors attempt to influence corporate behavior
+through their investment decisions. Companies allocate capital across
+mitigation, greenwashing, and resilience, with varying strategies influencing
+climate outcomes and investor preferences. We are releasing open-source
+versions of InvestESG in both PyTorch and JAX, which enable scalable and
+hardware-accelerated simulations for investigating competing incentives in
+mitigate climate change. Our experiments show that without ESG-conscious
+investors with sufficient capital, corporate mitigation efforts remain limited
+under the disclosure mandate. However, when a critical mass of investors
+prioritizes ESG, corporate cooperation increases, which in turn reduces climate
+risks and enhances long-term financial stability. Additionally, providing more
+information about global climate risks encourages companies to invest more in
+mitigation, even without investor involvement. Our findings align with
+empirical research using real-world data, highlighting MARL's potential to
+inform policy by providing insights into large-scale socio-economic challenges
+through efficient testing of alternative policy and market designs.","cs.LG, cs.CY, cs.MA, econ.GN, q-fin.EC",http://arxiv.org/abs/2411.09856v3,http://arxiv.org/pdf/2411.09856v3,ESG corporate profitability,0.0
+ESG In Corporate Filings: An AI Perspective,"Irene Aldridge, Payton Martin",2022-11-30,"Our main contribution is that we are using AI to discern the key drivers of
+variation of ESG mentions in the corporate filings. With AI, we are able to
+separate ""dimensions"" along which the corporate management presents their ESG
+policies to the world. These dimensions are 1) diversity, 2) hazardous
+materials, and 3) greenhouse gasses. We are also able to identify separate
+""background"" dimensions of unofficial ESG activity in the firms, which provide
+more color into the firms and their shareholders' thinking about their ESG
+processes. We then measure investors' response to the ESG activity ""factors"".
+The AI techniques presented can assist in building better, more reliable and
+useful ESG ratings systems.","econ.GN, q-fin.EC, q-fin.GN",http://arxiv.org/abs/2212.00018v1,http://arxiv.org/pdf/2212.00018v1,ESG corporate profitability,0.0
+Study on the impact of trade policy uncertainty on the performance of enterprise ESG performance,"Hanqin Chen, Ye Lu, Huaqin Huang",2025-01-17,"Trade policy uncertainty has become a significant feature of today's global
+economy. While its impact on free trade is evident, its microeconomic effects
+remain open to debate. This study explores the influence of trade policy
+uncertainty on corporate ESG performance and its underlying mechanisms, using
+data from A-share listed companies in China from 2010 to 2020. The findings
+reveal that increased trade policy uncertainty significantly and robustly
+enhances corporate ESG performance. Heterogeneity analysis indicates that
+high-tech enterprises are better equipped to improve their ESG performance in
+response to trade policy uncertainty. Furthermore, strengthening internal
+controls and appointing CEOs with environmental backgrounds also help firms
+seize the opportunities arising from trade policy uncertainty. In terms of
+mechanisms, trade policy uncertainty intensifies industry competition,
+compelling firms to enhance their ESG performance to gain market share.
+Additionally, it stimulates green technological innovation, further optimizing
+ESG outcomes. Therefore, efforts should focus on improving the ESG standards
+system, establishing ESG incentive policies, increasing the transparency and
+predictability of trade policies, and promoting corporate green development to
+advance national sustainable development goals.","econ.GN, q-fin.EC",http://arxiv.org/abs/2502.01640v1,http://arxiv.org/pdf/2502.01640v1,ESG corporate profitability,0.0
+Automatic ESG Assessment of Companies by Mining and Evaluating Media Coverage Data: NLP Approach and Tool,"Jannik Fischbach, Max Adam, Victor Dzhagatspanyan, Daniel Mendez, Julian Frattini, Oleksandr Kosenkov, Parisa Elahidoost",2022-12-13,"Context: Sustainable corporate behavior is increasingly valued by society and
+impacts corporate reputation and customer trust. Hence, companies regularly
+publish sustainability reports to shed light on their impact on environmental,
+social, and governance (ESG) factors. Problem: Sustainability reports are
+written by companies themselves and are therefore considered a
+company-controlled source. Contrary, studies reveal that non-corporate channels
+(e.g., media coverage) represent the main driver for ESG transparency. However,
+analysing media coverage regarding ESG factors is challenging since (1) the
+amount of published news articles grows daily, (2) media coverage data does not
+necessarily deal with an ESG-relevant topic, meaning that it must be carefully
+filtered, and (3) the majority of media coverage data is unstructured. Research
+Goal: We aim to extract ESG-relevant information from textual media reactions
+automatically to calculate an ESG score for a given company. Our goal is to
+reduce the cost of ESG data collection and make ESG information available to
+the general public. Contribution: Our contributions are three-fold: First, we
+publish a corpus of 432,411 news headlines annotated as being environmental-,
+governance-, social-related, or ESG-irrelevant. Second, we present our
+tool-supported approach called ESG-Miner capable of analyzing and evaluating
+headlines on corporate ESG-performance automatically. Third, we demonstrate the
+feasibility of our approach in an experiment and apply the ESG-Miner on 3000
+manually labeled headlines. Our approach processes 96.7 % of the headlines
+correctly and shows a great performance in detecting environmental-related
+headlines along with their correct sentiment. We encourage fellow researchers
+and practitioners to use the ESG-Miner at https://www.esg-miner.com.",cs.IR,http://arxiv.org/abs/2212.06540v2,http://arxiv.org/pdf/2212.06540v2,ESG corporate profitability,0.0
+What Does ChatGPT Make of Historical Stock Returns? Extrapolation and Miscalibration in LLM Stock Return Forecasts,"Shuaiyu Chen, T. Clifton Green, Huseyin Gulen, Dexin Zhou",2024-09-17,"We examine how large language models (LLMs) interpret historical stock
+returns and compare their forecasts with estimates from a crowd-sourced
+platform for ranking stocks. While stock returns exhibit short-term reversals,
+LLM forecasts over-extrapolate, placing excessive weight on recent performance
+similar to humans. LLM forecasts appear optimistic relative to historical and
+future realized returns. When prompted for 80% confidence interval predictions,
+LLM responses are better calibrated than survey evidence but are pessimistic
+about outliers, leading to skewed forecast distributions. The findings suggest
+LLMs manifest common behavioral biases when forecasting expected returns but
+are better at gauging risks than humans.","q-fin.GN, econ.GN, q-fin.EC",http://arxiv.org/abs/2409.11540v1,http://arxiv.org/pdf/2409.11540v1,green finance returns,0.0
+Robust blue-green urban flood risk management optimised with a genetic algorithm for multiple rainstorm return periods,"Asid Ur Rehman, Vassilis Glenis, Elizabeth Lewis, Chris Kilsby, Claire Walsh",2025-02-13,"Flood risk managers seek to optimise Blue-Green Infrastructure (BGI) designs
+to maximise return on investment. Current systems often use optimisation
+algorithms and detailed flood models to maximise benefit-cost ratios for single
+rainstorm return periods. However, these schemes may lack robustness in
+mitigating flood risks across different storm magnitudes. For example, a BGI
+scheme optimised for a 100-year return period may differ from one optimised for
+a 10-year return period. This study introduces a novel methodology
+incorporating five return periods (T = 10, 20, 30, 50, and 100 years) into a
+multi-objective BGI optimisation framework. The framework combines a
+Non-dominated Sorting Genetic Algorithm II (NSGA-II) with a fully distributed
+hydrodynamic model to optimise the spatial placement and combined size of BGI
+features. For the first time, direct damage cost (DDC) and expected annual
+damage (EAD), calculated for various building types, are used as risk objective
+functions, transforming a many-objective problem into a multi-objective one.
+Performance metrics such as Median Risk Difference (MedRD), Maximum Risk
+Difference (MaxRD), and Area Under Pareto Front (AUPF) reveal that a 100-year
+optimised BGI design performs poorly when evaluated for other return periods,
+particularly shorter ones. In contrast, a BGI design optimised using composite
+return periods enhances performance metrics across all return periods, with the
+greatest improvements observed in MedRD (22%) and AUPF (73%) for the 20-year
+return period, and MaxRD (23%) for the 50-year return period. Furthermore,
+climate uplift stress testing confirms the robustness of the proposed design to
+future rainfall extremes. This study advocates a paradigm shift in flood risk
+management, moving from single maximum to multiple rainstorm return
+period-based designs to enhance resilience and adaptability to future climate
+extremes.","cs.NE, cs.CE, cs.CY",http://arxiv.org/abs/2502.12174v1,http://arxiv.org/pdf/2502.12174v1,green finance returns,0.0
+Information Leakages in the Green Bond Market,"Darren Shannon, Jin Gong, Barry Sheehan",2025-04-04,"Public announcement dates are used in the green bond literature to measure
+equity market reactions to upcoming green bond issues. We find a sizeable
+number of green bond announcements were pre-dated by anonymous information
+leakages on the Bloomberg Terminal. From a candidate set of 2,036 'Bloomberg
+News' and 'Bloomberg First Word' headlines gathered between 2016 and 2022, we
+identify 259 instances of green bond-related information being released before
+being publicly announced by the issuing firm. These pre-announcement leaks
+significantly alter the equity trading dynamics of the issuing firms over
+intraday and daily event windows. Significant negative abnormal returns and
+increased trading volumes are observed following news leaks about upcoming
+green bond issues. These negative investor reactions are concentrated amongst
+financial firms, and leaks that arrive pre-market or early in market trading.
+We find equity price movements following news leaks can be explained to a
+greater degree than following public announcements. Sectoral differences are
+also observed in the key drivers behind investor reactions to green bond leaks
+by non-financials (Tobin's Q and free cash flow) and financials (ROA). Our
+results suggest that information leakages have a strong impact on market
+behaviour, and should be accounted for in green bond literature. Our findings
+also have broader ramifications for financial literature going forward.
+Privileged access to financially material information, courtesy of the
+ubiquitous use of Bloomberg Terminals by professional investors, highlights the
+need for event studies to consider wider sets of communication channels to
+confirm the date at which information first becomes available.","q-fin.PR, q-fin.GN, q-fin.TR",http://arxiv.org/abs/2504.03311v1,http://arxiv.org/pdf/2504.03311v1,green finance returns,0.0
+Heterogeneity and Increasing Returns May Drive Socio-Economic Transitions,"Gérard Weisbuch, Vincent Buskens, Luat Vuong",2007-06-11,"There are clear benefits associated with a particular consumer choice for
+many current markets. For example, as we consider here, some products might
+carry environmental or `green' benefits. Some consumers might value these
+benefits while others do not. However, as evidenced by myriad failed attempts
+of environmental products to maintain even a niche market, such benefits do not
+necessarily outweigh the extra purchasing cost. The question we pose is, how
+can such an initially economically-disadvantaged green product evolve to hold
+the greater share of the market? We present a simple mathematical model for the
+dynamics of product competition in a heterogeneous consumer population. Our
+model preassigns a hierarchy to the products, which designates the consumer
+choice when prices are comparable, while prices are dynamically rescaled to
+reflect increasing returns to scale. Our approach allows us to model many
+scenarios of technology substitution and provides a method for generalizing
+market forces. With this model, we begin to forecast irreversible trends
+associated with consumer dynamics as well as policies that could be made to
+influence transitions","q-fin.GN, physics.soc-ph",http://arxiv.org/abs/0706.1454v1,http://arxiv.org/pdf/0706.1454v1,green finance returns,0.0
+The Climate Cost of Climate Investment: A Two-Period Perspective,"Shaunak Kulkarni, Rohan Ajay Dubey",2024-08-26,"A one-size-fits-all paradigm that only adapts the scale and immediate outcome
+of climate investment to economic circumstances will provide a short-lived,
+economically inadequate response to climate issues; given the limited resources
+allocated to green finance, it stands to reason that the shortcomings of this
+will be exacerbated by the fact that it comes at the cost of long-term,
+self-perpetuating, systemic solutions. Financial commitments that do not
+consider the capital structure of green finance in an economy will cumulatively
+dis-aggregate the economic cost of climate investment, to erode the competitive
+advantage of the most innovative economies, while simultaneously imposing the
+greatest financial burden on economies that are most vulnerable to the impact
+of climate change; such disaggregation will also leave 'middle' economies in a
+state of flux - honouring similar financial commitments to vulnerable or highly
+developed peers, but unable to generate comparable return, yet sufficiently
+insulated from the impact of extreme climate phenomena to not organically
+develop solutions.
+  In the face of these changing realities, green innovation needs to expand
+beyond technology and address systemic inefficiencies - lack of clear
+responsibility, ambiguously defined commitments, and inadequate checks &
+balances to name a few.
+  Clever application of financial engineering demonstrates promise, and simple
+measures like carbon-credit exchanges have been effective in mitigating
+imperfections at the grassroots level. We believe that information- and
+incentive-centric systemic advancements can usher a fresh wave of green
+innovation that stands on the shoulders of giants to ensure effective
+implementation of technological breakthroughs; economic development that will
+create an international community equipped with a robust framework to deal with
+long-term crises in a strategic manner.","econ.GN, q-fin.EC",http://arxiv.org/abs/2408.14359v1,http://arxiv.org/pdf/2408.14359v1,green finance returns,0.0
+Managing ESG Ratings Disagreement in Sustainable Portfolio Selection,"Francesco Cesarone, Manuel Luis Martino, Federica Ricca, Andrea Scozzari",2023-12-17,"Sustainable Investing identifies the approach of investors whose aim is
+twofold: on the one hand, they want to achieve the best compromise between
+portfolio risk and return, but they also want to take into account the
+sustainability of their investment, assessed through some Environmental,
+Social, and Governance (ESG) criteria. The inclusion of sustainable goals in
+the portfolio selection process may have an actual impact on financial
+portfolio performance. ESG indices provided by the rating agencies are
+generally considered good proxies for the performance in sustainability of an
+investment, as well as, appropriate measures for Socially Responsible
+Investments (SRI) in the market. In this framework of analysis, the lack of
+alignment between ratings provided by different agencies is a crucial issue
+that inevitably undermines the robustness and reliability of these evaluation
+measures. In fact, the ESG rating disagreement may produce conflicting
+information, implying a difficulty for the investor in the portfolio ESG
+evaluation. This may cause underestimation or overestimation of the market
+opportunities for a sustainable investment. In this paper, we deal with a
+multi-criteria portfolio selection problem taking into account risk, return,
+and ESG criteria. For the ESG evaluation of the securities in the market, we
+consider more than one agency and propose a new approach to overcome the
+problem related to the disagreement between the ESG ratings by different
+agencies. We propose a nonlinear optimization model for our three-criteria
+portfolio selection problem. We show that it can be reformulated as an
+equivalent convex quadratic program by exploiting a technique known in the
+literature as the k-sum optimization strategy. An extensive empirical analysis
+of the performance of this model is provided on real-world financial data sets.","q-fin.PM, q-fin.CP, q-fin.RM",http://arxiv.org/abs/2312.10739v1,http://arxiv.org/pdf/2312.10739v1,sustainable investing performance,0.0
+Effects of syndication network on specialisation and performance of venture capital firms,"Qing Yao, Shaodong Ma, Jing Liang, Kim Christensen, Wanru Jing, Ruiqi Li",2022-11-02,"The Chinese venture capital (VC) market is a young and rapidly expanding
+financial subsector. Gaining a deeper understanding of the investment
+behaviours of VC firms is crucial for the development of a more sustainable and
+healthier market and economy. Contrasting evidence supports that either
+specialisation or diversification helps to achieve a better investment
+performance. However, the impact of the syndication network is overlooked.
+Syndication network has a great influence on the propagation of information and
+trust. By exploiting an authoritative VC dataset of thirty-five-year investment
+information in China, we construct a joint-investment network of VC firms and
+analyse the effects of syndication and diversification on specialisation and
+investment performance. There is a clear correlation between the syndication
+network degree and specialisation level of VC firms, which implies that the
+well-connected VC firms are diversified. More connections generally bring about
+more information or other resources, and VC firms are more likely to enter a
+new stage or industry with some new co-investing VC firms when compared to a
+randomised null model. Moreover, autocorrelation analysis of both
+specialisation and success rate on the syndication network indicates that
+clustering of similar VC firms is roughly limited to the secondary
+neighbourhood. When analysing local clustering patterns, we discover that,
+contrary to popular beliefs, there is no apparent successful club of investors.
+In contrast, investors with low success rates are more likely to cluster. Our
+discoveries enrich the understanding of VC investment behaviours and can assist
+policymakers in designing better strategies to promote the development of the
+VC industry.","physics.soc-ph, econ.EM, stat.AP",http://arxiv.org/abs/2211.00873v1,http://arxiv.org/pdf/2211.00873v1,sustainable investing performance,0.0
+Financial Markets and ESG: How Big Data is Transforming Sustainable Investing in Developing countries,"A T M Omor Faruq, Md Ataur Rahman Chowdhury",2025-03-09,"This study explores the role of big data adoption and financial market
+development in driving ESG investments in developing countries, using an
+instrumental variable (IV) approach to address endogeneity. The results show
+that big data adoption significantly enhances ESG investing, as data-driven
+analytics improve sustainability assessments and capital allocation. Financial
+market development also positively influences ESG investments, but its effect
+is relatively small. A key finding is that inflation negatively impacts ESG
+investment, highlighting the importance of macroeconomic stability in fostering
+sustainable finance. In contrast, GDP per capita and foreign direct investment
+(FDI) are not significant determinants, suggesting that economic growth alone
+does not drive sustainability efforts. Overall, this study provides empirical
+evidence that leveraging big data and financial market improvements can
+accelerate sustainable investing in emerging economies. Policymakers should
+focus on technological advancements, financial reforms, and inflation control
+to strengthen ESG investments and long-term sustainability commitments.","econ.GN, q-fin.EC",http://arxiv.org/abs/2503.06696v1,http://arxiv.org/pdf/2503.06696v1,sustainable investing performance,0.0
+Measuring Transition Risk in Investment Funds,Ricardo Crisostomo,2022-10-27,"We develop a comprehensive framework to measure the impact of the climate
+transition on investment portfolios. Our analysis is enriched by including
+geographical, sectoral, company and ISIN-level data to assess transition risk.
+We find that investment funds suffer a moderate 5.7% loss upon materialization
+of a high transition risk scenario. However, the risk distribution is
+significantly left-skewed, with the worst 1% funds experiencing an average loss
+of 21.3%. In terms of asset classes, equities are the worst performers
+(-12.7%), followed by corporate bonds (-5.6%) and government bonds (-4.8%). We
+discriminate among financial instruments by considering the carbon footprint of
+specific counterparties and the credit rating, duration, convexity and
+volatility of individual exposures. We find that sustainable funds are less
+exposed to transition risk and perform better than the overall fund sector in
+the low-carbon transition, validating their choice as green investments.","q-fin.RM, econ.GN, q-fin.EC, q-fin.PM",http://arxiv.org/abs/2210.15329v3,http://arxiv.org/pdf/2210.15329v3,sustainable investing performance,0.0
+Crosswashing in Sustainable Investing: Unveiling Strategic Practices Impacting ESG Scores,"Bertrand Kian Hassani, Yacoub Bahini",2024-03-21,"This paper introduces and defines a novel concept in sustainable investing,
+termed crosswashing, and explore its impact on ESG (Environmental, Social, and
+Governance) ratings through quantitative analysis using a Multi-Criteria
+Decision Making (MCDM) model. The study emphasises that this specific form of
+greenwashing is not currently considered in existing ESG assessments,
+potentially leading to an inflated perception of corporate ethical practices.
+Unlike traditional greenwashing, crosswashing involves companies strategically
+investing in sustainable activities to boost Environmental, Social, and
+Governance (ESG) scores while preserving nonsustainable core operations. By
+unveiling the nuances of crosswashing, the research contributes to a more
+nuanced understanding of sustainable investing, offering insights for improved
+evaluation and regulation of corporate environmental and ethical
+responsibilities.","econ.GN, q-fin.EC",http://arxiv.org/abs/2407.00751v1,http://arxiv.org/pdf/2407.00751v1,sustainable investing performance,0.0

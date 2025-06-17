@@ -1,0 +1,27 @@
+TITLE: Financial Markets and ESG: How Big Data is Transforming Sustainable Investing in Developing countries
+
+AUTHORS: A T M Omor Faruq, Md Ataur Rahman Chowdhury
+
+PUBLISHED: 2025-03-09
+
+ABSTRACT:
+This study explores the role of big data adoption and financial market
+development in driving ESG investments in developing countries, using an
+instrumental variable (IV) approach to address endogeneity. The results show
+that big data adoption significantly enhances ESG investing, as data-driven
+analytics improve sustainability assessments and capital allocation. Financial
+market development also positively influences ESG investments, but its effect
+is relatively small. A key finding is that inflation negatively impacts ESG
+investment, highlighting the importance of macroeconomic stability in fostering
+sustainable finance. In contrast, GDP per capita and foreign direct investment
+(FDI) are not significant determinants, suggesting that economic growth alone
+does not drive sustainability efforts. Overall, this study provides empirical
+evidence that leveraging big data and financial market improvements can
+accelerate sustainable investing in emerging economies. Policymakers should
+focus on technological advancements, financial reforms, and inflation control
+to strengthen ESG investments and long-term sustainability commitments.
+
+CATEGORIES: econ.GN, q-fin.EC
+
+URL: http://arxiv.org/abs/2503.06696v1
+PDF: http://arxiv.org/pdf/2503.06696v1

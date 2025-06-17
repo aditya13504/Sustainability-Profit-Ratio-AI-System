@@ -1,0 +1,28 @@
+TITLE: Heterogeneity and Increasing Returns May Drive Socio-Economic Transitions
+
+AUTHORS: Gérard Weisbuch, Vincent Buskens, Luat Vuong
+
+PUBLISHED: 2007-06-11
+
+ABSTRACT:
+There are clear benefits associated with a particular consumer choice for
+many current markets. For example, as we consider here, some products might
+carry environmental or `green' benefits. Some consumers might value these
+benefits while others do not. However, as evidenced by myriad failed attempts
+of environmental products to maintain even a niche market, such benefits do not
+necessarily outweigh the extra purchasing cost. The question we pose is, how
+can such an initially economically-disadvantaged green product evolve to hold
+the greater share of the market? We present a simple mathematical model for the
+dynamics of product competition in a heterogeneous consumer population. Our
+model preassigns a hierarchy to the products, which designates the consumer
+choice when prices are comparable, while prices are dynamically rescaled to
+reflect increasing returns to scale. Our approach allows us to model many
+scenarios of technology substitution and provides a method for generalizing
+market forces. With this model, we begin to forecast irreversible trends
+associated with consumer dynamics as well as policies that could be made to
+influence transitions
+
+CATEGORIES: q-fin.GN, physics.soc-ph
+
+URL: http://arxiv.org/abs/0706.1454v1
+PDF: http://arxiv.org/pdf/0706.1454v1

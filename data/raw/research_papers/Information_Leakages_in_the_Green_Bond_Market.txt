@@ -1,0 +1,35 @@
+TITLE: Information Leakages in the Green Bond Market
+
+AUTHORS: Darren Shannon, Jin Gong, Barry Sheehan
+
+PUBLISHED: 2025-04-04
+
+ABSTRACT:
+Public announcement dates are used in the green bond literature to measure
+equity market reactions to upcoming green bond issues. We find a sizeable
+number of green bond announcements were pre-dated by anonymous information
+leakages on the Bloomberg Terminal. From a candidate set of 2,036 'Bloomberg
+News' and 'Bloomberg First Word' headlines gathered between 2016 and 2022, we
+identify 259 instances of green bond-related information being released before
+being publicly announced by the issuing firm. These pre-announcement leaks
+significantly alter the equity trading dynamics of the issuing firms over
+intraday and daily event windows. Significant negative abnormal returns and
+increased trading volumes are observed following news leaks about upcoming
+green bond issues. These negative investor reactions are concentrated amongst
+financial firms, and leaks that arrive pre-market or early in market trading.
+We find equity price movements following news leaks can be explained to a
+greater degree than following public announcements. Sectoral differences are
+also observed in the key drivers behind investor reactions to green bond leaks
+by non-financials (Tobin's Q and free cash flow) and financials (ROA). Our
+results suggest that information leakages have a strong impact on market
+behaviour, and should be accounted for in green bond literature. Our findings
+also have broader ramifications for financial literature going forward.
+Privileged access to financially material information, courtesy of the
+ubiquitous use of Bloomberg Terminals by professional investors, highlights the
+need for event studies to consider wider sets of communication channels to
+confirm the date at which information first becomes available.
+
+CATEGORIES: q-fin.PR, q-fin.GN, q-fin.TR
+
+URL: http://arxiv.org/abs/2504.03311v1
+PDF: http://arxiv.org/pdf/2504.03311v1

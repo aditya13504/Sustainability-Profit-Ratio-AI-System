@@ -1,0 +1,25 @@
+TITLE: Measuring Transition Risk in Investment Funds
+
+AUTHORS: Ricardo Crisostomo
+
+PUBLISHED: 2022-10-27
+
+ABSTRACT:
+We develop a comprehensive framework to measure the impact of the climate
+transition on investment portfolios. Our analysis is enriched by including
+geographical, sectoral, company and ISIN-level data to assess transition risk.
+We find that investment funds suffer a moderate 5.7% loss upon materialization
+of a high transition risk scenario. However, the risk distribution is
+significantly left-skewed, with the worst 1% funds experiencing an average loss
+of 21.3%. In terms of asset classes, equities are the worst performers
+(-12.7%), followed by corporate bonds (-5.6%) and government bonds (-4.8%). We
+discriminate among financial instruments by considering the carbon footprint of
+specific counterparties and the credit rating, duration, convexity and
+volatility of individual exposures. We find that sustainable funds are less
+exposed to transition risk and perform better than the overall fund sector in
+the low-carbon transition, validating their choice as green investments.
+
+CATEGORIES: q-fin.RM, econ.GN, q-fin.EC, q-fin.PM
+
+URL: http://arxiv.org/abs/2210.15329v3
+PDF: http://arxiv.org/pdf/2210.15329v3

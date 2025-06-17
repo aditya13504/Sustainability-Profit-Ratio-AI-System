@@ -1,0 +1,29 @@
+TITLE: The China Trade Shock and the ESG Performances of US firms
+
+AUTHORS: Hui Xu, Yue Wu
+
+PUBLISHED: 2022-01-28
+
+ABSTRACT:
+How does import competition from China affect engagement on ESG initiatives
+by US corporates? On the one hand, reduced profitability due to import
+competition and lagging ESG performance of Chinese exporters can disincentivize
+US firms to put more resources to ESG initiatives. On the other hand, the shift
+from labor-intensive production to capital/technology-intensive production
+along with offshoring may improve the US company's ESG performance. Moreover,
+US companies have incentives to actively pursue more ESG engagement to
+differentiate from Chinese imports. Exploiting a trade policy in which US
+congress granted China the Permanent Normal Trade Relations and the resulting
+change in expected tariff rates on Chinese imports, we find that greater import
+competition from China leads to an increase in the US company's ESG
+performance. The improvement primarily stems from "doing more positives" and
+from more involvement on environmental initiatives. Indirect and direct
+evidence shows that the improvement is not driven by the change in production
+process or offshoring, but is consistent with product differentiation. Our
+results suggest that the trade shock from China has significant impact on the
+US company's ESG performance.
+
+CATEGORIES: q-fin.GN, econ.GN, q-fin.EC
+
+URL: http://arxiv.org/abs/2201.12402v1
+PDF: http://arxiv.org/pdf/2201.12402v1

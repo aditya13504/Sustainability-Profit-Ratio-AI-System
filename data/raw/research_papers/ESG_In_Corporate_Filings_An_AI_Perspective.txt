@@ -1,0 +1,22 @@
+TITLE: ESG In Corporate Filings: An AI Perspective
+
+AUTHORS: Irene Aldridge, Payton Martin
+
+PUBLISHED: 2022-11-30
+
+ABSTRACT:
+Our main contribution is that we are using AI to discern the key drivers of
+variation of ESG mentions in the corporate filings. With AI, we are able to
+separate "dimensions" along which the corporate management presents their ESG
+policies to the world. These dimensions are 1) diversity, 2) hazardous
+materials, and 3) greenhouse gasses. We are also able to identify separate
+"background" dimensions of unofficial ESG activity in the firms, which provide
+more color into the firms and their shareholders' thinking about their ESG
+processes. We then measure investors' response to the ESG activity "factors".
+The AI techniques presented can assist in building better, more reliable and
+useful ESG ratings systems.
+
+CATEGORIES: econ.GN, q-fin.EC, q-fin.GN
+
+URL: http://arxiv.org/abs/2212.00018v1
+PDF: http://arxiv.org/pdf/2212.00018v1

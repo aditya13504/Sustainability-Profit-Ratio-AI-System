@@ -1,0 +1,39 @@
+TITLE: The Climate Cost of Climate Investment: A Two-Period Perspective
+
+AUTHORS: Shaunak Kulkarni, Rohan Ajay Dubey
+
+PUBLISHED: 2024-08-26
+
+ABSTRACT:
+A one-size-fits-all paradigm that only adapts the scale and immediate outcome
+of climate investment to economic circumstances will provide a short-lived,
+economically inadequate response to climate issues; given the limited resources
+allocated to green finance, it stands to reason that the shortcomings of this
+will be exacerbated by the fact that it comes at the cost of long-term,
+self-perpetuating, systemic solutions. Financial commitments that do not
+consider the capital structure of green finance in an economy will cumulatively
+dis-aggregate the economic cost of climate investment, to erode the competitive
+advantage of the most innovative economies, while simultaneously imposing the
+greatest financial burden on economies that are most vulnerable to the impact
+of climate change; such disaggregation will also leave 'middle' economies in a
+state of flux - honouring similar financial commitments to vulnerable or highly
+developed peers, but unable to generate comparable return, yet sufficiently
+insulated from the impact of extreme climate phenomena to not organically
+develop solutions.
+  In the face of these changing realities, green innovation needs to expand
+beyond technology and address systemic inefficiencies - lack of clear
+responsibility, ambiguously defined commitments, and inadequate checks &
+balances to name a few.
+  Clever application of financial engineering demonstrates promise, and simple
+measures like carbon-credit exchanges have been effective in mitigating
+imperfections at the grassroots level. We believe that information- and
+incentive-centric systemic advancements can usher a fresh wave of green
+innovation that stands on the shoulders of giants to ensure effective
+implementation of technological breakthroughs; economic development that will
+create an international community equipped with a robust framework to deal with
+long-term crises in a strategic manner.
+
+CATEGORIES: econ.GN, q-fin.EC
+
+URL: http://arxiv.org/abs/2408.14359v1
+PDF: http://arxiv.org/pdf/2408.14359v1

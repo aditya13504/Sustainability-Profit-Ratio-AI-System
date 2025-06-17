@@ -1,0 +1,25 @@
+TITLE: Crosswashing in Sustainable Investing: Unveiling Strategic Practices Impacting ESG Scores
+
+AUTHORS: Bertrand Kian Hassani, Yacoub Bahini
+
+PUBLISHED: 2024-03-21
+
+ABSTRACT:
+This paper introduces and defines a novel concept in sustainable investing,
+termed crosswashing, and explore its impact on ESG (Environmental, Social, and
+Governance) ratings through quantitative analysis using a Multi-Criteria
+Decision Making (MCDM) model. The study emphasises that this specific form of
+greenwashing is not currently considered in existing ESG assessments,
+potentially leading to an inflated perception of corporate ethical practices.
+Unlike traditional greenwashing, crosswashing involves companies strategically
+investing in sustainable activities to boost Environmental, Social, and
+Governance (ESG) scores while preserving nonsustainable core operations. By
+unveiling the nuances of crosswashing, the research contributes to a more
+nuanced understanding of sustainable investing, offering insights for improved
+evaluation and regulation of corporate environmental and ethical
+responsibilities.
+
+CATEGORIES: econ.GN, q-fin.EC
+
+URL: http://arxiv.org/abs/2407.00751v1
+PDF: http://arxiv.org/pdf/2407.00751v1

@@ -1,0 +1,37 @@
+TITLE: Managing ESG Ratings Disagreement in Sustainable Portfolio Selection
+
+AUTHORS: Francesco Cesarone, Manuel Luis Martino, Federica Ricca, Andrea Scozzari
+
+PUBLISHED: 2023-12-17
+
+ABSTRACT:
+Sustainable Investing identifies the approach of investors whose aim is
+twofold: on the one hand, they want to achieve the best compromise between
+portfolio risk and return, but they also want to take into account the
+sustainability of their investment, assessed through some Environmental,
+Social, and Governance (ESG) criteria. The inclusion of sustainable goals in
+the portfolio selection process may have an actual impact on financial
+portfolio performance. ESG indices provided by the rating agencies are
+generally considered good proxies for the performance in sustainability of an
+investment, as well as, appropriate measures for Socially Responsible
+Investments (SRI) in the market. In this framework of analysis, the lack of
+alignment between ratings provided by different agencies is a crucial issue
+that inevitably undermines the robustness and reliability of these evaluation
+measures. In fact, the ESG rating disagreement may produce conflicting
+information, implying a difficulty for the investor in the portfolio ESG
+evaluation. This may cause underestimation or overestimation of the market
+opportunities for a sustainable investment. In this paper, we deal with a
+multi-criteria portfolio selection problem taking into account risk, return,
+and ESG criteria. For the ESG evaluation of the securities in the market, we
+consider more than one agency and propose a new approach to overcome the
+problem related to the disagreement between the ESG ratings by different
+agencies. We propose a nonlinear optimization model for our three-criteria
+portfolio selection problem. We show that it can be reformulated as an
+equivalent convex quadratic program by exploiting a technique known in the
+literature as the k-sum optimization strategy. An extensive empirical analysis
+of the performance of this model is provided on real-world financial data sets.
+
+CATEGORIES: q-fin.PM, q-fin.CP, q-fin.RM
+
+URL: http://arxiv.org/abs/2312.10739v1
+PDF: http://arxiv.org/pdf/2312.10739v1

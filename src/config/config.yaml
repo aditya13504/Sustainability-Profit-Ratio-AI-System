@@ -1,0 +1,292 @@
+# Research Paper Enabled Sustainability Profit Ratio Analyzer Configuration
+
+# API Keys Configuration
+api_keys:
+  alpha_vantage_api_key: "82KM1CMCJ1SETUCA"
+  finnhub_api_key: "d1757f1r01qkv5jek3i0d1757f1r01qkv5jek3ig"  quandl_api_key: "hxp9NsKohfTrDNxpMA-G"
+  polygon_api_key: "s3JzR4hqRYrB3FCXEabJSkawe0zZJmqF"
+  newsapi_key: "e3fca0438e3b4b938a7d3f0095b8eb15"
+  google_gemini_api_key: "AIzaSyBY951amjxp6zh0KHpxtPnN5wwUevdOBuI"
+  semantic_scholar_api_key: "YapSrmha6g2KrlQCZxxm4UKE3FbGJyb57mMoKcPj"
+
+# API Configuration
+apis:
+  financial:
+    alpha_vantage:
+      api_key: "82KM1CMCJ1SETUCA"
+      base_url: "https://www.alphavantage.co/query"
+    finnhub:
+      api_key: "d1757f1r01qkv5jek3i0d1757f1r01qkv5jek3ig"
+      base_url: "https://finnhub.io/api/v1"
+    yahoo_finance:
+      enabled: true
+    quandl:
+      api_key: "hxp9NsKohfTrDNxpMA-G"
+      base_url: "https://www.quandl.com/api/v3"
+    research:
+    google_scholar:
+      enabled: true
+      max_papers: 200
+    arxiv:
+      enabled: true
+      max_papers: 200
+    semantic_scholar:
+      api_key: "YapSrmha6g2KrlQCZxxm4UKE3FbGJyb57mMoKcPj"
+      base_url: "https://api.semanticscholar.org/graph/v1"
+      enabled: true
+      max_papers: 200
+      fields: "paperId,title,abstract,authors,year,citationCount,influentialCitationCount,fieldsOfStudy,s2FieldsOfStudy,publicationTypes,publicationDate,journal,venue"
+    
+    google_gemini:
+      api_key: "AIzaSyBY951amjxp6zh0KHpxtPnN5wwUevdOBuI"
+      model: "gemini-2.0-flash-exp"
+      base_url: "https://generativelanguage.googleapis.com/v1beta"
+      enabled: true
+      max_tokens: 1048576
+      temperature: 1
+      top_p: 0.95
+      top_k: 40
+
+    vertex_ai:
+      location: "us-central1"
+    bigquery:
+      dataset: "sustainability_analysis"
+
+# Dataset Configuration
+dataset:
+  target_companies: 2000  # Maximum number of companies to analyze
+  update_frequency: "daily"
+  data_sources:
+    - "yahoo_finance"
+    - "alpha_vantage" 
+    - "finnhub"
+    - "polygon"
+    - "quandl"
+    - "newsapi"
+    - "google_scholar"
+    - "arxiv"
+    - "vertex_ai"
+    - "bigquery"
+    - "research_papers"
+    - "esg_reports"
+    - "sustainability_websites"
+  
+  collection_limits:
+    max_companies_per_batch: 50
+    max_research_papers: 2000
+    rate_limit_delay: 1.0  # seconds between requests
+    concurrent_requests: 10
+    timeout_seconds: 30
+  
+  quality_thresholds:
+    minimum_data_quality_score: 0.3
+    minimum_esg_data_coverage: 0.2
+    minimum_financial_data_completeness: 0.4
+
+# Model Configuration
+models:
+  nlp:
+    summarization:
+      model_name: "facebook/bart-large-cnn"
+      max_length: 150
+      min_length: 50
+    
+    sentiment:
+      model_name: "cardiffnlp/twitter-roberta-base-sentiment-latest"
+    
+    sustainability_classifier:
+      model_name: "microsoft/DialoGPT-medium"
+      custom_model_path: "models/sustainability_classifier"
+    
+    embedding:
+      model_name: "sentence-transformers/all-MiniLM-L6-v2"
+  
+  ml:
+    random_forest:
+      n_estimators: 100
+      max_depth: 10
+      random_state: 42
+    
+    gradient_boosting:
+      n_estimators: 100
+      learning_rate: 0.1
+      max_depth: 6
+      random_state: 42
+    
+    neural_network:
+      hidden_layers: [100, 50]
+      learning_rate_init: 0.001
+      max_iter: 500
+      random_state: 42
+    
+    svm:
+      kernel: "rbf"
+      C: 1.0
+      gamma: "scale"
+
+# Data Configuration
+data:
+  storage:
+    local_cache: "data/cache"
+    database: "data/spr_database.db"
+    research_papers: "data/papers"
+    financial_data: "data/financial"
+  
+  refresh_intervals:
+    financial_data: 3600  # 1 hour in seconds
+    research_papers: 86400  # 24 hours
+    sustainability_scores: 43200  # 12 hours
+
+# SPR Calculation Parameters
+spr_calculation:
+  weights:
+    profit_performance: 0.4
+    sustainability_impact: 0.4
+    research_alignment: 0.2
+  
+  sustainability_metrics:
+    - carbon_footprint_reduction
+    - renewable_energy_adoption
+    - waste_reduction
+    - resource_efficiency
+    - social_responsibility
+    - governance_score
+  
+  profit_metrics:
+    - roi
+    - ebitda_margin
+    - revenue_growth
+    - profit_margin
+    - operational_efficiency
+
+# Dashboard Configuration
+dashboard:
+  host: "localhost"
+  port: 8050
+  debug: true
+  theme: "bootstrap"
+  
+  refresh_interval: 30000  # milliseconds
+  
+  charts:
+    default_companies: ["TSLA", "GOOGL", "MSFT", "AAPL"]
+    time_periods: ["1Y", "2Y", "5Y"]
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/spr_analyzer.log"
+  max_size: "10MB"
+  backup_count: 5
+
+# Research Processing
+research_processing:
+  keywords:
+    sustainability:
+      - "sustainability"
+      - "environmental impact"
+      - "carbon footprint"
+      - "renewable energy"
+      - "ESG"
+      - "green technology"
+      - "corporate social responsibility"
+    
+    profitability:
+      - "profitability"
+      - "financial performance"
+      - "ROI"
+      - "revenue growth"
+      - "cost reduction"
+      - "operational efficiency"
+    filters:
+    min_citation_count: 5
+    publication_years: [2020, 2021, 2022, 2023, 2024, 2025]
+    languages: ["en"]
+    
+  processing:
+    batch_size: 10
+    max_workers: 4
+    timeout: 300  # seconds
+
+# AI Configuration
+ai:
+  gemini:
+    api_key: "AIzaSyBY951amjxp6zh0KHpxtPnN5wwUevdOBuI"
+    model: "gemini-2.5-pro"  # More stable model with better rate limits
+    enabled: true
+    max_tokens: 1048576  # 10 million tokens
+    temperature: 1
+    top_p: 0.95
+    top_k: 40
+    rate_limiting:
+      requests_per_minute: 8  # Conservative limit for free tier
+      retry_attempts: 3
+      backoff_multiplier: 2
+      max_delay: 60
+    generation_config:
+      response_mime_type: "application/json"
+      response_schema:
+        type: "object"
+        properties:
+          analysis:
+            type: "string"
+          insights:
+            type: "array"
+            items:
+              type: "string"
+          enhanced_data:
+            type: "object"
+    safety_settings:
+      - category: "HARM_CATEGORY_HARASSMENT"
+        threshold: "BLOCK_MEDIUM_AND_ABOVE"
+      - category: "HARM_CATEGORY_HATE_SPEECH"
+        threshold: "BLOCK_MEDIUM_AND_ABOVE"
+      - category: "HARM_CATEGORY_SEXUALLY_EXPLICIT"
+        threshold: "BLOCK_MEDIUM_AND_ABOVE"
+      - category: "HARM_CATEGORY_DANGEROUS_CONTENT"
+        threshold: "BLOCK_MEDIUM_AND_ABOVE"
+
+# Company Registry APIs Configuration
+registries:
+  sec_edgar:
+    name: "SEC EDGAR"
+    api_key: ""  # No key required for basic access
+    base_url: "https://data.sec.gov"
+    rate_limit: 10  # requests per second
+    enabled: true
+  
+  uk_companies_house:
+    name: "UK Companies House"
+    api_key: ""  # Required - register at https://developer.company-information.service.gov.uk/
+    base_url: "https://api.company-information.service.gov.uk"
+    rate_limit: 600  # requests per 5 minutes
+    enabled: false  # Enable when API key is added
+  
+  india_ogd:
+    name: "India Open Government Data"
+    api_key: ""  # Required - register at https://data.gov.in/
+    base_url: "https://api.data.gov.in"
+    rate_limit: 60  # requests per minute
+    enabled: false  # Enable when API key is added
+  
+  canada_corporations:
+    name: "Canadian Corporations"
+    api_key: ""  # Contact Innovation, Science and Economic Development Canada
+    base_url: "https://www.ic.gc.ca/app/scr/cc/CorporationsCanada"
+    rate_limit: 30  # requests per minute
+    enabled: false  # Enable when API key is added
+  
+  australia_asic:
+    name: "Australian Securities and Investments Commission"
+    api_key: ""  # Required - register at https://download.asic.gov.au/
+    base_url: "https://download.asic.gov.au"
+    rate_limit: 60  # requests per minute
+    enabled: false  # Enable when API key is added
+  
+  eu_bris:
+    name: "EU Business Register Interconnection System"
+    api_key: ""  # Required - contact BRIS network
+    base_url: "https://api.openbris.eu"
+    rate_limit: 30  # requests per minute
+    enabled: false  # Enable when API key is added

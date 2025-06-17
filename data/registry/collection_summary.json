@@ -1,0 +1,75 @@
+{
+  "collection_date": "2025-06-15T22:27:41.992630",
+  "total_registries": 11,
+  "successful_collections": 10,
+  "failed_collections": 1,
+  "total_companies": 30,
+  "registry_details": {
+    "sec_edgar": {
+      "companies_collected": 0,
+      "collection_time_seconds": 3.08,
+      "status": "failed",
+      "error": "No data returned"
+    },
+    "india_ogd": {
+      "companies_collected": 3,
+      "collection_time_seconds": 2.37,
+      "status": "success",
+      "data_quality": "high"
+    },
+    "uk_companies_house": {
+      "companies_collected": 3,
+      "collection_time_seconds": 17.38,
+      "status": "success",
+      "data_quality": "high"
+    },
+    "canada_corporations": {
+      "companies_collected": 3,
+      "collection_time_seconds": 4.28,
+      "status": "success",
+      "data_quality": "high"
+    },
+    "australia_asic": {
+      "companies_collected": 3,
+      "collection_time_seconds": 1.96,
+      "status": "success",
+      "data_quality": "high"
+    },
+    "germany_unternehmensregister": {
+      "companies_collected": 3,
+      "collection_time_seconds": 2.26,
+      "status": "success",
+      "data_quality": "high"
+    },
+    "eu_bris": {
+      "companies_collected": 3,
+      "collection_time_seconds": 46.26,
+      "status": "success",
+      "data_quality": "high"
+    },
+    "marshall_islands": {
+      "companies_collected": 3,
+      "collection_time_seconds": 0.0,
+      "status": "success",
+      "data_quality": "high"
+    },
+    "nass_corporate": {
+      "companies_collected": 3,
+      "collection_time_seconds": 0.0,
+      "status": "success",
+      "data_quality": "high"
+    },
+    "datarade_global": {
+      "companies_collected": 3,
+      "collection_time_seconds": 1.07,
+      "status": "success",
+      "data_quality": "high"
+    },
+    "gobii_global": {
+      "companies_collected": 3,
+      "collection_time_seconds": 469.08,
+      "status": "success",
+      "data_quality": "high"
+    }
+  }
+}

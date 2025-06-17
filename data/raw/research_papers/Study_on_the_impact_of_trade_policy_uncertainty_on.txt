@@ -1,0 +1,30 @@
+TITLE: Study on the impact of trade policy uncertainty on the performance of enterprise ESG performance
+
+AUTHORS: Hanqin Chen, Ye Lu, Huaqin Huang
+
+PUBLISHED: 2025-01-17
+
+ABSTRACT:
+Trade policy uncertainty has become a significant feature of today's global
+economy. While its impact on free trade is evident, its microeconomic effects
+remain open to debate. This study explores the influence of trade policy
+uncertainty on corporate ESG performance and its underlying mechanisms, using
+data from A-share listed companies in China from 2010 to 2020. The findings
+reveal that increased trade policy uncertainty significantly and robustly
+enhances corporate ESG performance. Heterogeneity analysis indicates that
+high-tech enterprises are better equipped to improve their ESG performance in
+response to trade policy uncertainty. Furthermore, strengthening internal
+controls and appointing CEOs with environmental backgrounds also help firms
+seize the opportunities arising from trade policy uncertainty. In terms of
+mechanisms, trade policy uncertainty intensifies industry competition,
+compelling firms to enhance their ESG performance to gain market share.
+Additionally, it stimulates green technological innovation, further optimizing
+ESG outcomes. Therefore, efforts should focus on improving the ESG standards
+system, establishing ESG incentive policies, increasing the transparency and
+predictability of trade policies, and promoting corporate green development to
+advance national sustainable development goals.
+
+CATEGORIES: econ.GN, q-fin.EC
+
+URL: http://arxiv.org/abs/2502.01640v1
+PDF: http://arxiv.org/pdf/2502.01640v1

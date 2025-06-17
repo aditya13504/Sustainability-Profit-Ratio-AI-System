@@ -1,0 +1,36 @@
+TITLE: Effects of syndication network on specialisation and performance of venture capital firms
+
+AUTHORS: Qing Yao, Shaodong Ma, Jing Liang, Kim Christensen, Wanru Jing, Ruiqi Li
+
+PUBLISHED: 2022-11-02
+
+ABSTRACT:
+The Chinese venture capital (VC) market is a young and rapidly expanding
+financial subsector. Gaining a deeper understanding of the investment
+behaviours of VC firms is crucial for the development of a more sustainable and
+healthier market and economy. Contrasting evidence supports that either
+specialisation or diversification helps to achieve a better investment
+performance. However, the impact of the syndication network is overlooked.
+Syndication network has a great influence on the propagation of information and
+trust. By exploiting an authoritative VC dataset of thirty-five-year investment
+information in China, we construct a joint-investment network of VC firms and
+analyse the effects of syndication and diversification on specialisation and
+investment performance. There is a clear correlation between the syndication
+network degree and specialisation level of VC firms, which implies that the
+well-connected VC firms are diversified. More connections generally bring about
+more information or other resources, and VC firms are more likely to enter a
+new stage or industry with some new co-investing VC firms when compared to a
+randomised null model. Moreover, autocorrelation analysis of both
+specialisation and success rate on the syndication network indicates that
+clustering of similar VC firms is roughly limited to the secondary
+neighbourhood. When analysing local clustering patterns, we discover that,
+contrary to popular beliefs, there is no apparent successful club of investors.
+In contrast, investors with low success rates are more likely to cluster. Our
+discoveries enrich the understanding of VC investment behaviours and can assist
+policymakers in designing better strategies to promote the development of the
+VC industry.
+
+CATEGORIES: physics.soc-ph, econ.EM, stat.AP
+
+URL: http://arxiv.org/abs/2211.00873v1
+PDF: http://arxiv.org/pdf/2211.00873v1
