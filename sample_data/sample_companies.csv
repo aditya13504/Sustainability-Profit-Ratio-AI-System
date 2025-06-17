@@ -1,0 +1,6 @@
+company_name,symbol,sector,spr_score,sustainability_rating,profit_margin,description
+Apple Inc.,AAPL,Technology,8.5,A,0.25,Leading technology company with strong sustainability initiatives
+Microsoft Corp.,MSFT,Technology,8.2,A,0.23,Cloud computing leader with carbon negative commitment
+Johnson & Johnson,JNJ,Healthcare,7.8,B+,0.18,Healthcare giant with focus on sustainable practices
+Tesla Inc.,TSLA,Automotive,9.1,A+,0.15,Electric vehicle pioneer driving sustainable transportation
+Unilever PLC,UL,Consumer Goods,7.5,A-,0.12,Consumer goods company with Sustainable Living Plan

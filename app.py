@@ -1,19 +1,16 @@
 """
 Vercel deployment entry point for Enhanced SPR Dashboard
+Simplified version with minimal dependencies
 """
 import sys
 import os
 from pathlib import Path
 
-# Add src to Python path
-src_path = Path(__file__).parent / "src"
-sys.path.insert(0, str(src_path))
+# Import the simplified dashboard
+from app_simplified import SimplifiedSPRDashboard
 
-# Import the dashboard
-from dashboard.enhanced_spr_dashboard import FourStepSPRDashboard
-
-# Initialize the dashboard
-dashboard = FourStepSPRDashboard()
+# Initialize the simplified dashboard
+dashboard = SimplifiedSPRDashboard()
 
 # Vercel expects a Flask/Django app or WSGI application
 # Since this is a Dash app, we need to expose the Flask server

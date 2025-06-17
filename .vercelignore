@@ -1,0 +1,46 @@
+# Exclude unnecessary files and directories from Vercel deployment
+
+# Data directories (use lightweight sample data instead)
+data/raw/
+data/registry/
+
+# Development files
+*.pyc
+__pycache__/
+.pytest_cache/
+.coverage
+.env.local
+.env.development
+
+# Documentation
+README.md
+LICENSE
+VERCEL_DEPLOYMENT.md
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Test files
+test_*
+*_test.py
+tests/
+
+# Development scripts
+start_enhanced_spr_dashboard.py
+create_sample_data.py
+
+# Large source directory (using simplified version)
+src/
