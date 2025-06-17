@@ -6,7 +6,12 @@ import plotly.graph_objects as go
 import plotly.express as px
 import json
 import os
+import sys
 from pathlib import Path
+
+print("Starting static site generation...")
+print(f"Python version: {sys.version}")
+print(f"Current working directory: {os.getcwd()}")
 
 def create_sample_data():
     """Create sample company data"""
@@ -255,23 +260,43 @@ def generate_html():
 
 def main():
     """Main function to generate static site"""
-    # Create dist directory
-    dist_dir = Path("dist")
-    dist_dir.mkdir(exist_ok=True)
-    
-    # Generate HTML
-    html_content = generate_html()
-    
-    # Save HTML file
-    with open(dist_dir / "index.html", "w", encoding="utf-8") as f:
-        f.write(html_content)
-    
-    # Create data file for potential future use
-    data = create_sample_data()
-    data.to_json(dist_dir / "data.json", orient="records", indent=2)
-    
-    print("Static site generated successfully!")
-    print(f"Files created in: {dist_dir.absolute()}")
+    try:
+        print("Creating dist directory...")
+        # Create dist directory
+        dist_dir = Path("dist")
+        dist_dir.mkdir(exist_ok=True)
+        print(f"✓ Directory created: {dist_dir.absolute()}")
+        
+        print("Generating HTML content...")
+        # Generate HTML
+        html_content = generate_html()
+        print("✓ HTML content generated")
+        
+        print("Saving HTML file...")
+        # Save HTML file
+        with open(dist_dir / "index.html", "w", encoding="utf-8") as f:
+            f.write(html_content)
+        print("✓ index.html saved")
+        
+        print("Creating data file...")
+        # Create data file for potential future use
+        data = create_sample_data()
+        data.to_json(dist_dir / "data.json", orient="records", indent=2)
+        print("✓ data.json saved")
+        
+        print("Static site generated successfully!")
+        print(f"Files created in: {dist_dir.absolute()}")
+        
+        # List generated files
+        print("\nGenerated files:")
+        for file in dist_dir.iterdir():
+            print(f"  - {file.name} ({file.stat().st_size} bytes)")
+            
+    except Exception as e:
+        print(f"Error during site generation: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()

@@ -1,9 +1,13 @@
 [build]
-  command = "pip install -r requirements.txt && python generate_static_site.py"
+  command = "bash build.sh"
   publish = "dist"
 
 [build.environment]
   PYTHON_VERSION = "3.9"
+  PIP_CACHE_DIR = "/opt/buildhome/.pip_cache"
+
+# Alternative build command if bash script fails
+# command = "python -m pip install --upgrade pip && pip install -r requirements.txt && python test_dependencies.py && python generate_static_site.py"
 
 # Redirect all routes to index.html for SPA behavior
 [[redirects]]

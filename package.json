@@ -1,0 +1,23 @@
+{
+  "name": "enhanced-spr-analyzer",
+  "version": "1.0.0",
+  "description": "Enhanced SPR Analyzer - Sustainability-Profit-Research Investment Analysis",
+  "main": "generate_static_site.py",
+  "scripts": {
+    "build": "python generate_static_site.py",
+    "test": "python test_dependencies.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aditya13504/Sustainability-Profit-Ratio-AI-System.git"
+  },
+  "keywords": [
+    "sustainability",
+    "finance",
+    "ai",
+    "investment",
+    "analysis"
+  ],
+  "author": "Enhanced SPR Team",
+  "license": "MIT"
+}
