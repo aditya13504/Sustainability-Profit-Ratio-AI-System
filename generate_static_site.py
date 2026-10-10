@@ -97,9 +97,8 @@ def generate_html():
     data = create_sample_data()
     spr_chart, profit_chart = create_charts(data)
     
-    # Convert charts to HTML
-    spr_chart_html = spr_chart.to_html(include_plotlyjs='cdn', div_id="spr-chart")
-    profit_chart_html = profit_chart.to_html(include_plotlyjs='cdn', div_id="profit-chart")
+    spr_chart_json = json.dumps(json.loads(spr_chart.to_json()), ensure_ascii=False)
+    profit_chart_json = json.dumps(json.loads(profit_chart.to_json()), ensure_ascii=False)
     
     # Create company table HTML
     table_rows = ""
@@ -157,6 +156,47 @@ def generate_html():
             border-radius: 8px;
             overflow: hidden;
         }}
+        .data-notice {{
+            border: 1px solid #c9d8ff;
+            border-radius: 10px;
+            background: #f3f6ff;
+            color: #31436b;
+            padding: 14px 18px;
+            margin-bottom: 22px;
+        }}
+        .summary-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 14px;
+            margin: 20px 0 26px;
+        }}
+        .summary-card {{
+            border: 1px solid #e9eaf2;
+            border-radius: 10px;
+            background: #fff;
+            padding: 17px 20px;
+        }}
+        .summary-card span {{
+            display: block;
+            color: #6c757d;
+            font-size: .9rem;
+        }}
+        .summary-card strong {{
+            display: block;
+            margin-top: 5px;
+            color: #2c3e50;
+            font-size: 1.55rem;
+        }}
+        .data-controls {{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin: 18px 0;
+        }}
+        .data-controls p {{ margin: 0; color: #6c757d; }}
+        .chart-error {{ display: none; }}
         h1 {{
             color: #2c3e50;
             font-weight: 600;
@@ -172,11 +212,30 @@ def generate_html():
                 <div class="col-12 text-center mb-4">
                     <h1>
                         <i class="fas fa-chart-line me-3"></i>
-                        Enhanced SPR Analyzer
+                        SPR Insights
                     </h1>
-                    <p class="lead">Sustainability-Profit Ratio Analysis Dashboard</p>
+                    <p class="lead">Explore sustainability and profitability indicators</p>
                 </div>
             </div>
+
+            <div class="data-notice" role="status">
+                <strong>Illustrative sample data</strong> — this static demo does not fetch live company, ESG, or market data, and does not generate AI assessments. Import your own CSV to explore it in this browser.
+            </div>
+
+            <section class="summary-grid" aria-label="Dataset summary">
+                <div class="summary-card"><span>Companies shown</span><strong id="company-count">—</strong></div>
+                <div class="summary-card"><span>Average SPR score</span><strong id="average-score">—</strong></div>
+                <div class="summary-card"><span>Average profit margin</span><strong id="average-margin">—</strong></div>
+            </section>
+
+            <section class="data-controls" aria-label="Import company data">
+                <p>CSV columns: company_name, symbol, sector, spr_score, sustainability_rating, profit_margin</p>
+                <label class="btn btn-primary mb-0">
+                    Import CSV
+                    <input id="csv-file" type="file" accept=".csv,text/csv" hidden>
+                </label>
+            </section>
+            <div id="data-message" class="alert d-none" role="status" aria-live="polite"></div>
             
             <!-- Charts -->
             <div class="row">
@@ -186,7 +245,7 @@ def generate_html():
                             <h4 class="mb-0">SPR Scores by Company</h4>
                         </div>
                         <div class="card-body">
-                            <div id="spr-chart"></div>
+                            <div id="spr-chart" role="img" aria-label="SPR score chart"></div>
                         </div>
                     </div>
                 </div>
@@ -196,7 +255,7 @@ def generate_html():
                             <h4 class="mb-0">Profit Margin Analysis</h4>
                         </div>
                         <div class="card-body">
-                            <div id="profit-chart"></div>
+                            <div id="profit-chart" role="img" aria-label="Profit margin and SPR score chart"></div>
                         </div>
                     </div>
                 </div>
@@ -237,7 +296,7 @@ def generate_html():
                 <div class="col-12 text-center">
                     <p class="text-muted">
                         <i class="fas fa-leaf me-2"></i>
-                        Powered by AI-driven sustainability analysis
+                        Demo analysis only · No live financial or sustainability data
                     </p>
                 </div>
             </div>
@@ -245,12 +304,120 @@ def generate_html():
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
     <script>
-        // Extract and render SPR chart
-        {spr_chart.to_json()}
-        // Extract and render profit chart  
-        {profit_chart.to_json()}
+        const sampleCompanies = {data.to_json(orient="records")};
+        const initialSprFigure = {spr_chart_json};
+        const initialProfitFigure = {profit_chart_json};
+        let companies = sampleCompanies;
+
+        function showMessage(message, isError = false) {{
+            const element = document.getElementById('data-message');
+            element.textContent = message;
+            element.className = `alert ${{isError ? 'alert-danger' : 'alert-success'}}`;
+        }}
+
+        function updateSummary() {{
+            const averageScore = companies.reduce((sum, company) => sum + Number(company.spr_score), 0) / companies.length;
+            const averageMargin = companies.reduce((sum, company) => sum + Number(company.profit_margin), 0) / companies.length;
+            document.getElementById('company-count').textContent = companies.length.toLocaleString();
+            document.getElementById('average-score').textContent = averageScore.toFixed(1);
+            document.getElementById('average-margin').textContent = `${{(averageMargin * 100).toFixed(1)}}%`;
+
+            const table = document.querySelector('.table tbody');
+            table.replaceChildren(...companies.map((company) => {{
+                const row = document.createElement('tr');
+                [company.company_name, company.symbol, company.sector, Number(company.spr_score).toFixed(1),
+                 company.sustainability_rating, `${{(Number(company.profit_margin) * 100).toFixed(1)}}%`]
+                    .forEach((value) => {{
+                        const cell = document.createElement('td');
+                        cell.textContent = value;
+                        row.appendChild(cell);
+                    }});
+                return row;
+            }}));
+
+            Plotly.react('spr-chart', [{{
+                type: 'bar',
+                x: companies.map((company) => company.company_name),
+                y: companies.map((company) => Number(company.spr_score)),
+                marker: {{ color: '#667eea' }},
+                hovertemplate: '%{{x}}<br>SPR score: %{{y:.1f}}<extra></extra>'
+            }}], {{ title: 'Sustainability–profit ratio score', yaxis: {{ title: 'Score', range: [0, 10] }}, margin: {{ t: 54, b: 100, l: 48, r: 20 }} }}, {{ responsive: true, displaylogo: false }});
+            Plotly.react('profit-chart', [{{
+                type: 'scatter',
+                mode: 'markers',
+                x: companies.map((company) => Number(company.profit_margin) * 100),
+                y: companies.map((company) => Number(company.spr_score)),
+                text: companies.map((company) => company.company_name),
+                marker: {{ size: 14, color: '#764ba2', opacity: .8 }},
+                hovertemplate: '%{{text}}<br>Profit margin: %{{x:.1f}}%<br>SPR score: %{{y:.1f}}<extra></extra>'
+            }}], {{ title: 'Profit margin vs. SPR score', xaxis: {{ title: 'Profit margin (%)' }}, yaxis: {{ title: 'SPR score', range: [0, 10] }}, margin: {{ t: 54, b: 58, l: 48, r: 20 }} }}, {{ responsive: true, displaylogo: false }});
+        }}
+
+        function parseCsv(text) {{
+            const rows = [];
+            let row = [];
+            let cell = '';
+            let quoted = false;
+            for (let index = 0; index < text.length; index += 1) {{
+                const character = text[index];
+                if (quoted) {{
+                    if (character === '"' && text[index + 1] === '"') {{ cell += '"'; index += 1; }}
+                    else if (character === '"') quoted = false;
+                    else cell += character;
+                }} else if (character === '"' && cell.length === 0) quoted = true;
+                else if (character === ',') {{ row.push(cell); cell = ''; }}
+                else if (character === '\\n' || character === '\\r') {{
+                    if (character === '\\r' && text[index + 1] === '\\n') index += 1;
+                    row.push(cell); cell = '';
+                    if (row.some((value) => value.trim())) rows.push(row);
+                    row = [];
+                }} else cell += character;
+            }}
+            if (quoted) throw new Error('The CSV contains an unclosed quoted field.');
+            row.push(cell);
+            if (row.some((value) => value.trim())) rows.push(row);
+            if (rows.length < 2) throw new Error('Add a header row and at least one company.');
+            const headers = rows[0].map((value) => value.trim().toLowerCase());
+            const required = ['company_name', 'symbol', 'sector', 'spr_score', 'sustainability_rating', 'profit_margin'];
+            const indexes = required.map((name) => headers.indexOf(name));
+            if (indexes.some((index) => index < 0)) throw new Error(`Required CSV headers: ${{required.join(', ')}}.`);
+            return rows.slice(1).map((values, rowIndex) => {{
+                const company = Object.fromEntries(required.map((name, index) => [name, (values[indexes[index]] || '').trim()]));
+                const score = Number(company.spr_score);
+                const marginInput = company.profit_margin;
+                const margin = Number(marginInput.replace('%', '')) / (marginInput.endsWith('%') ? 100 : 1);
+                if (!company.company_name || !company.symbol || !company.sector || !company.sustainability_rating ||
+                    !Number.isFinite(score) || score < 0 || score > 10 || !Number.isFinite(margin) || margin < -1 || margin > 1) {{
+                    throw new Error(`Invalid company data on CSV row ${{rowIndex + 2}}.`);
+                }}
+                return {{ ...company, spr_score: score, profit_margin: margin }};
+            }});
+        }}
+
+        Plotly.newPlot('spr-chart', initialSprFigure.data, initialSprFigure.layout, {{ responsive: true, displaylogo: false }});
+        Plotly.newPlot('profit-chart', initialProfitFigure.data, initialProfitFigure.layout, {{ responsive: true, displaylogo: false }});
+        updateSummary();
+
+        document.getElementById('csv-file').addEventListener('change', async (event) => {{
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+            if (file.size > 5 * 1024 * 1024) {{
+                showMessage('Choose a CSV file smaller than 5 MB.', true);
+                event.target.value = '';
+                return;
+            }}
+            try {{
+                companies = parseCsv(await file.text());
+                updateSummary();
+                showMessage(`Loaded ${{companies.length}} companies from ${{file.name}} locally. No file data was uploaded.`);
+            }} catch (error) {{
+                showMessage(error.message || 'Could not read this CSV file.', true);
+            }} finally {{
+                event.target.value = '';
+            }}
+        }});
     </script>
 </body>
 </html>
